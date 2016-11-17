@@ -236,7 +236,11 @@ void setup() {
 
 void draw() {
   background(255);
-  translate(-15, -10); 
+  
+    noFill();
+  rect(50,50,width-100,height-100);
+  
+  translate(-31, -7); 
   fill(0);
 
   // Title
@@ -259,12 +263,12 @@ void draw() {
   // 4th block
   //translate(0, 290);
   for (int i=0; i<name4.length; ++i) {
-    text(name4[i], x + c1, y + yn + 400 +(m1 * i), z);
+    text(name4[i], x + c1, y + yn + 399 +(m1 * i), z);
   }
 
   fill(#424143);
   for (int i=0; i<name12.length; ++i) {
-    text(name12[i], x, y + yn + 400 +(m1 * i), z);
+    text(name12[i], x, y + yn + 399 +(m1 * i), z);
   }
   //line(3*x2, y+yn+(yn4), x2*-100, y+yn+yn4);
   
@@ -322,4 +326,10 @@ void draw() {
 
 //  println("Finished.");
 //  exit();
+  //pushMatrix(); translate(0, 93);
+  //stroke(0);
+  //line(width/2,0,width/2,height);
+  //line(0,height/2, width, height/2);
+  //popMatrix();
+  
 }
